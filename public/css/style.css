@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+/*ul {
+  list-style: none;
+  word-wrap: break-word;
+}*/
+
+input:focus {  /* <--less specific, overridden by above */
+    outline: none;
+}
+
+#videoContainer {
+  width:480px;
+  height:360px;
+  background:white;
+  margin-top:100px;
+  position: relative;
+}
+
+#tagOverlay {
+  width:480px;
+  height:360px;
+  z-index: 5;
+  float: left;
+}
+
+#video {
+  width:480px;
+  height:360px;
+  background:red;
+  z-index: 300000;
+  position: absolute;
+  float: left;
+}
+
+#linkContainer {
+  width:200px;
+  height:600px;
+  position:fixed;
+  right:0;
+  top:50px;
+  border-left: 1px black solid;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*background:green;*/
+}
+
+#linkListContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#linkList {
+  width: 240px;
+  margin-left: -40px;
+  margin-top: 0px;
+  left: 0px;
+  display: inline-block;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#linkList li {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 25px;
+}
+
+#linkList li:hover {
+  border-color: white;
+  color: white;
+}
+
+#linkClass {
+  padding: 0px;
+    width: 100%;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#frameContainer {
+  width:200px;
+  height:600px;
+  position:fixed;
+  left:0;
+  top:50px;
+  border-right: 1px black solid;
+  /*background:green;*/
+}
+
+#frameListContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#frameList {
+  width: 240px;
+  margin-left: -40px;
+  margin-top: 0px;
+  left: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+#frameList li {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+#frameList li:hover {
+  background: yellow;
+}
+
+.dot {
+  border-radius: 20px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.dot:hover {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 0px 2px 3px white;
+}
+
+.dotBox {
+  width: 100px;
+  height: 100%;
+  border: 3px solid black;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+#videoPlayer {
+  /*position:absolute;*/
+  z-index:0;
+  /*left:0;*/
+}
+
+#canvasImage {
+  position: absolute;
+  top: 0;
+  right:20%;
+}
+
+#nameInput {
+  width: 100%;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+#linkInput {
+  width: 100%;
+  font-size: 18px;
+}
+
+#topbar {
+  -webkit-box-shadow: 0px 7px 20px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 7px 20px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 20px -8px rgba(0,0,0,0.75);
+  width:100%;
+  position:fixed;
+  height:50px;
+  background:black;
+  top:0;
+}
+
+#actionContainer {
+  bottom:0;
+  position:fixed;
+  width:10000px;
+  height:100px;
+  border-top: 1px solid black;
+  background: #ddd;
+  overflow-x: auto;
+  overflow-y: hidden;
+  word-wrap: break-word;
+}
