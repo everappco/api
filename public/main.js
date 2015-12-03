@@ -1,7 +1,7 @@
   var socket = io.connect('http://52.9.34.48:8888');
   console.log('connected')
 
-  var interval = setInterval(ping, 5)
+  var interval = setInterval(ping, 50)
 
   function ping(){
     socket.emit('ping', +new Date())
