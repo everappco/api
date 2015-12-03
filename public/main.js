@@ -15,7 +15,7 @@
 
 var ct = 0
   function open(){
-  	if (ct < 10){
+  	if (ct < 1){
   		newTab()
 	    // window.open('http://52.8.245.23:3000', '_blank')
 	    ct++
