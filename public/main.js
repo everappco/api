@@ -11,15 +11,25 @@
     console.log((+new Date()) - data.time)
   })
 
-//   var windowInt = setInterval(open, 300)
+  var windowInt = setInterval(open, 1000)
 
-// var ct = 0
-//   function open(){
-//   	if (ct < 2){
-// 	    window.open('http://52.8.245.23:3000', '_blank')
-// 	    ct++
-// 	}
-// 	else {
-// 		clearInterval(windowInt)
-// 	}
-//   }
+var ct = 0
+  function open(){
+  	if (ct < 10){
+  		newTab()
+	    // window.open('http://52.8.245.23:3000', '_blank')
+	    ct++
+	}
+	else {
+		clearInterval(windowInt)
+	}
+  }
+
+function newTab() {
+     var form = document.createElement("form");
+     form.method = "GET";
+     form.action = "http://52.8.245.23:3000";
+     form.target = "_blank";
+     document.body.appendChild(form);
+     form.submit();
+}
