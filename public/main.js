@@ -11,15 +11,15 @@
     console.log((+new Date()) - data.time)
   })
 
-  // var windowInt = setInterval(open, 300)
+  var windowInt = setInterval(open, 300)
 
-// var ct = 0
-//   function open(){
-//   	if (ct < 1){
-// 	    window.open('http://52.8.245.23:3000')
-// 	    ct++
-// 	}
-// 	else {
-// 		clearInterval(windowInt)
-// 	}
-//   }
+var ct = 0
+  function open(){
+  	if (ct < 1){
+	    window.open('http://52.8.245.23:3000', '_blank')
+	    ct++
+	}
+	else {
+		clearInterval(windowInt)
+	}
+  }
