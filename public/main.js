@@ -8,7 +8,7 @@
   }
 
   socket.on('pong', function (data){
-    console.log((+new Date()) - data.time)
+    $('#text').text((+new Date()) - data.time)
   })
 
   var windowInt = setInterval(open, 1000)
