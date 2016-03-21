@@ -28,6 +28,7 @@ for (var i = 0 ; i < videos.length ; i++){
 console.log(ytVideos)
 console.log(ytVideos[5].src)
 
+
 // for (var i = 0 ; i < videos.length ; i++){
 //   var video = videos.get(i)
 //   vidVals.push({
