@@ -1,3 +1,11 @@
+// INJECT THIS
+
+// var script = document.createElement('script');
+//    script.setAttribute('src', '//cdn.rawgit.com/everappco/api/master/api.js');
+//    script.setAttribute('type', 'text/javascript');
+//    document.getElementsByTagName('head')[0].appendChild(script);
+
+
 var videos = $('video')
 var videoSrcs = $('video source')
 var ytVideos = $('iframe')
@@ -18,6 +26,7 @@ for (var i = 0 ; i < videos.length ; i++){
 }
 
 console.log(ytVideos)
+console.log(ytVideos[5].src)
 
 // for (var i = 0 ; i < videos.length ; i++){
 //   var video = videos.get(i)
