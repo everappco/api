@@ -26,7 +26,9 @@ for (var i = 0 ; i < videos.length ; i++){
 }
 
 console.log(ytVideos)
-console.log(ytVideos[5].src)
+for (var i = 0 ; i < ytVideos.length ; i++){
+  console.log(ytVideos[i].src)
+}
 
 
 // for (var i = 0 ; i < videos.length ; i++){
