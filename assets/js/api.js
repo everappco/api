@@ -1,10 +1,11 @@
 // INJECT THIS
 
-// var script = document.createElement('script');
-//    script.setAttribute('src', '//cdn.rawgit.com/everappco/api/master/api.js');
-//    script.setAttribute('type', 'text/javascript');
-//    document.getElementsByTagName('head')[0].appendChild(script);
-
+/*
+var script = document.createElement('script');
+   script.setAttribute('src', '//cdn.rawgit.com/everappco/api/master/assets/js/api.js');
+   script.setAttribute('type', 'text/javascript');
+   document.getElementsByTagName('head')[0].appendChild(script);
+*/
 
 var videos = $('video')
 var videoSrcs = $('video source')
@@ -25,6 +26,7 @@ for (var i = 0 ; i < videos.length ; i++){
   })
 }
 
+console.log('hey')
 console.log(ytVideos)
 for (var i = 0 ; i < 10 ; i++){
   console.log(i)
