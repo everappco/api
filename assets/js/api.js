@@ -14,17 +14,17 @@ var vidVals = [], ytVals = []
 var allItemsOpen = false
 
 // Identify all videos on page
-for (var i = 0 ; i < videos.length ; i++){
-  var video = videos.get(i)
-  vidVals.push({
-    element: video,
-    src: videoSrcs.get(i).src,
-    width: video.offsetWidth,
-    height: video.offsetHeight,
-    time: video.currentTime,
-    parent: video.parentElement
-  })
-}
+// for (var i = 0 ; i < videos.length ; i++){
+//   var video = videos.get(i)
+//   vidVals.push({
+//     element: video,
+//     src: videoSrcs.get(i).src,
+//     width: video.offsetWidth,
+//     height: video.offsetHeight,
+//     time: video.currentTime,
+//     parent: video.parentElement
+//   })
+// }
 
 console.log('hey')
 console.log(ytVideos)
